@@ -6,3 +6,9 @@ services:
     volumes:
     - .:/var/workspace:rw
     working_dir: /var/workspace
+  kaniko:
+    image: gcr.io/kaniko-project/executor:debug
+    volumes:
+    - .:/var/workspace:rw
+    working_dir: /var/workspace
+    entrypoint: sh
