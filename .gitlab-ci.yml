@@ -4,4 +4,4 @@ include:
 
 variables:
   CONTAINER_IMAGE_REGISTRY_PRODUCTION: $CONTAINER_IMAGE_REGISTRY_REGULAR
-  #KANIKO_IMAGE: dkr.gtl.net/dkr/devops-tools-kaniko-job-runner
+  KANIKO_IMAGE: dkr.gtl.net/dkr/devops-tools-kaniko-job-runner
