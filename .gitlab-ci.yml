@@ -1,0 +1,3 @@
+include:
+- file: container-image/pipeline.gitlab-ci.yml
+  project: devops/tools/ci
