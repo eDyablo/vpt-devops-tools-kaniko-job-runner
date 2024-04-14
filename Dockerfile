@@ -11,6 +11,8 @@ RUN \
     jq \
     yq
 
+RUN mkdir -p /kaniko/.docker
+
 ARG CONTAINER_USER=default
 ARG CONTAINER_USER_GROUP=default
 
