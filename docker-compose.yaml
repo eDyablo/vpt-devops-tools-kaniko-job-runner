@@ -1,0 +1,8 @@
+services:
+  runner:
+    build:
+      context: .
+    image: dkr.gtl.net/dkr/devops-tools-container-image-job-runner
+    volumes:
+    - .:/var/workspace:rw
+    working_dir: /var/workspace
