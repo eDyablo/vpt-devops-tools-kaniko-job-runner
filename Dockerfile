@@ -8,7 +8,6 @@ FROM ${DOCKER_REGISTRY:+${DOCKER_REGISTRY}/}alpine
 
 COPY --from=kaniko /etc/nsswitch.conf /etc/nsswitch.conf
 COPY --from=kaniko /kaniko /kaniko
-COPY --from=kaniko /kaniko/.docker /kaniko/.docker
 
 ENV \
   DOCKER_CONFIG=/kaniko/.docker/ \
